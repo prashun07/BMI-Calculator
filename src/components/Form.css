@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: rgb(148, 165, 151); */
+    background-image:"url(/images/health.png)";
+   
+}
+/* .imageCheck{
+    background-image:"url(/image/cardimage.jpg)";
+} */
+.heading-text{
+    color: rgb(23, 32, 40);
+}
