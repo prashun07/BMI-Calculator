@@ -54,7 +54,9 @@ export default function Form() {
               Submit
             </button>
           </form>
-          <div>
+          <div className="card-secondry">
+      <div className="card-body1">
+          <div className="heading-text">
             {flag === true ? (
               <h2>
                 BMI:{bmi} - {bmiMessage}
@@ -62,12 +64,10 @@ export default function Form() {
             ) : (
               ""
             )}
+            </div>
+            </div>
           </div>
         </div>
-        {/* <div className="imageCheck">
-        <img src={process.env.PUBLIC_URL+"/images/cardimage.jpg"} />
-
-        </div> */}
       </div>
     </div>
   );

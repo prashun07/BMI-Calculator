@@ -1,14 +1,18 @@
+
 .card{
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    /* background-color: rgb(148, 165, 151); */
-    background-image:"url(/images/health.png)";
-   
+    background-image:url('/public/images/cardimage.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-/* .imageCheck{
-    background-image:"url(/image/cardimage.jpg)";
-} */
+.card-secondry{
+    /* background-image: url('/public/images/health.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    background-color: rgb(184, 184, 172);
+}
 .heading-text{
-    color: rgb(23, 32, 40);
+    color: rgb(234, 237, 240);
 }
