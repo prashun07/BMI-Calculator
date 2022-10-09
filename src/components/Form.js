@@ -51,7 +51,7 @@ export default function Form() {
                 </button>
             </form>
             <div>
-                {flag == true ? <h2>BMI:{bmi} - {bmiMessage}</h2>: ""}
+                {flag === true ? <h2>BMI:{bmi} - {bmiMessage}</h2>: ""}
             </div>
         </div>
 );
