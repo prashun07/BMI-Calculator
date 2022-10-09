@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import './Form.css';
+import "./Form.css";
+import OutputCard from "./OutputCard";
 export default function Form() {
-  const [height, setHeight] = useState(0);
-  const [weight, setWeight] = useState(0);
-  const [bmi, setBmi] = useState(0);
-  const [bmiMessage, setBmiMessage] = useState("Message");
-  const [flag, setFlag] = useState(0);
+    const [height, setHeight] = useState(0);
+    const [weight, setWeight] = useState(0);
+    const [bmi, setBmi] = useState(0);
+    const [bmiMessage, setBmiMessage] = useState("Message");
+    const [flag, setFlag] = useState(0);
   const calculate = (e) => {
     e.preventDefault();
     const ht = height * 0.0254;
@@ -25,9 +26,11 @@ export default function Form() {
     <div className="card">
       <div className="card-body">
         <div className="row">
-          <form  onSubmit={calculate}>
+          <form onSubmit={calculate}>
             <div className="col">
-              <label className="heading-text" htmlFor="inputHeight">Height</label>
+              <label className="heading-text" htmlFor="inputHeight">
+                Height
+              </label>
               <input
                 type="text"
                 onChange={(e) => {
@@ -39,7 +42,9 @@ export default function Form() {
               />
             </div>
             <div className="form-group ">
-              <label className="heading-text" htmlFor="InputWeight">Weight</label>
+              <label className="heading-text" htmlFor="InputWeight">
+                Weight
+              </label>
               <input
                 type="text"
                 onChange={(e) => {
@@ -54,19 +59,7 @@ export default function Form() {
               Submit
             </button>
           </form>
-          <div className="card-secondry">
-      <div className="card-body1">
-          <div className="heading-text">
-            {flag === true ? (
-              <h2>
-                BMI:{bmi} - {bmiMessage}
-              </h2>
-            ) : (
-              ""
-            )}
-            </div>
-            </div>
-          </div>
+          <OutputCard flag={flag} bmiMessage={bmiMessage} bmi={bmi}/>
         </div>
       </div>
     </div>
